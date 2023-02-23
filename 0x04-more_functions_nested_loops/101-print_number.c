@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_number - A program that finds and prints the largest prime factor
+ * print_number - a function that prints an integer
  * @n: The number to print
  *
  */
