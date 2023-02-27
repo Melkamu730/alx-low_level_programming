@@ -5,8 +5,7 @@
  * starting with the first character, followed by a new line
  *
  * @str: This pointer point to a char or string
- *Return: print
- *
+ * Return: print
  */
 
 void puts2(char *str)
