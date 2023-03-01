@@ -1,47 +1,26 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * _strcat - concatenates two strings
- *
- * @dest: string to have content added from str
- *
- * @src: string to be read
- *
- * Return: pointer to dest
+ * _strcat - concatenates two strings,
+ * @dest: destination.
+ * @src: source.
+ * Return: the pointer to dest.
  */
-
 char *_strcat(char *dest, char *src)
 {
-	char *d;
-	char *s;
+	int count = 0, count2 = 0;
 
-	d = dest;
-	s = src;
-
-	while (*dest)
+	while (*(dest + count) != '\0')
 	{
-		dest++;
+		count++;
 	}
-/*
- * tracer
- *	printf("*dest=%c, dest=%p\n", *dest, dest);
- */
-	while (*src)
-	{
-		*dest = *src;
-		src++;
-		dest++;
-/*
- * tracers
- *		printf("*src=%c, src=%p", *src, src);
- *		printf("*dest=%c dest=%p\n", *dest, dest);
- */
-	}
-	dest++;
-	*dest = '\0';
-	dest = d;
-	src = s;
 
+	while (count2 >= 0)
+	{
+		*(dest + count) = *(src + count2);
+		if (*(src + count2) == '\0')
+			break;
+		count++;
+		count2++;
+	}
 	return (dest);
 }
