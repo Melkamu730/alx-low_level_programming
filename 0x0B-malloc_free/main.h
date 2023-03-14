@@ -9,4 +9,7 @@ int _putchar(char c);
 char *create_array(unsigned int size, char c);
 int **alloc_grid(int width, int height);
 char *argstostr(int ac, char **av);  
+int word_len(char *str);
+int count_words(char *str);
+char **strtow(char *str);
 #endif
