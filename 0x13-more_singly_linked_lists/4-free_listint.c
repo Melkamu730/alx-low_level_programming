@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * free_listint - Write a function that frees a listint_t list
- * @head: My struct
+ * @head: Struct
  * Return: return to the list
  */
 void free_listint(listint_t *head)
